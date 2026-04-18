@@ -11,7 +11,9 @@ app.use(express.json()); // JSON data receive karne ke liye
 // Aap ke Bot aur Channel ki Details
 const BOT_TOKEN = process.env.BOT_TOKEN; 
 
-const CHAT_ID = "@healthjobs_portal"; 
+// یہی لائن اپنے کوڈ میں کاپی کر لیں:
+const CHAT_ID = "@healthjobsportal"; 
+
 
 // Basic Route - Check karne ke liye ke API zinda hai ya nahi
 app.get('/', (req, res) => {
