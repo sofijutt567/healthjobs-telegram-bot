@@ -9,7 +9,8 @@ app.use(cors()); // Kisi bhi frontend se request allow karne ke liye
 app.use(express.json()); // JSON data receive karne ke liye
 
 // Aap ke Bot aur Channel ki Details
-const BOT_TOKEN = "8418789615:AAF08gO4Nfq59K2D16pxrhtJafIuEgGeWwY";
+const BOT_TOKEN = process.env.BOT_TOKEN; 
+
 const CHAT_ID = "@healthjobs_portal"; 
 
 // Basic Route - Check karne ke liye ke API zinda hai ya nahi
@@ -56,3 +57,4 @@ app.listen(PORT, () => {
 
 // Vercel Serverless Functions ke liye zaroori line
 module.exports = app;
+  
